@@ -16,11 +16,6 @@ class GildedRoseTest extends TestCase
     private array $items;
 
     /**
-     * @var Item[]
-     */
-    private array $itemsDay1;
-
-    /**
      * @var GildedRose
      */
     private GildedRose $gildedRose;
@@ -86,7 +81,7 @@ class GildedRoseTest extends TestCase
         for ($i = 0; $i < 30; $i++) {
             $this->gildedRose->updateQuality();
         }
-        
+
         $this->assertSame([
             (string) new Item('+5 Dexterity Vest', -20, 0),
             (string) new Item('Aged Brie', -28, 50),

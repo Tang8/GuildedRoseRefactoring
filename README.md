@@ -32,6 +32,15 @@ The project uses composer to install:
 - [Easy Coding Standard (ECS)](https://github.com/symplify/easy-coding-standard)
 - [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer/wiki)
 
+## Start the project
+
+You can run the project with :
+```shell script
+make start DAYS="<number-of-days-you-want>" [or php fixtures/init.php #<optionnal-number-of-days>]
+```
+
+Number of default days is 2.
+
 ## Testing
 
 PHPUnit is configured for testing, a composer script has been provided. To run the unit tests, from the root of the PHP

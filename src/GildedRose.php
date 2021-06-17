@@ -55,7 +55,7 @@ final class GildedRose
                 if ($item->quality < 50) {
                     $item->quality = $item->quality + 1;
                     if ($this->itemHasName($item, 'Backstage passes to a TAFKAL80ETC concert') && $item->sell_in < 11 && $item->quality < 50)
-                        $item->quality = $item->quality + 2;
+                        $item->sell_in < 6 ? $item->quality = $item->quality + 2 : $item->quality = $item->quality + 1;
                 }
             }
 

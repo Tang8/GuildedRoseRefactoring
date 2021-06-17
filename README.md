@@ -75,5 +75,3 @@ PHPStan is used to run static analysis checks:
 ```shell script
 composer phpstan [or make phpstan]
 ```
-
-**Happy coding**!
